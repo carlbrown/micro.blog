@@ -1,0 +1,14 @@
+<nav class="main-nav">
+    {% if page.url != "/index.html" %}
+        <a href="{{ site.baseurl }}/"> <span class="arrow">←</span> Home </a>
+    {% endif %}
+
+	{% assign sorted_pages = site.pages | sort: "order" %}
+	{% for page in sorted_pages %}
+		{% if page.title %}
+			<a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+		{% endif %}
+	{% endfor %}
+		
+    <a class="cta" href="{{ site.baseurl }}/feed.xml">RSS</a>
+</nav>
