@@ -1,0 +1,53 @@
+aboutPage: true
+
+# - markdown: redcarpet
+highlighter: rouge
+
+domain_# - name: "http://[HOSTNAME]"
+google_analytics: 'UA-XXXXXXXX-X'
+disqus: false
+disqus_short# - name: 'your-disqus-shortname'
+
+defaults:
+    -
+        scope:
+            path: "" # empty string for all files
+            type: pages
+        values:
+            layout: default
+    -
+        scope:
+            path: "" # empty string for all files
+            type: posts
+        values:
+            layout: post
+    -
+        scope:
+            path: ""
+            type: drafts
+        values:
+            layout: post
+
+title: "Carl Brown"
+tagline: ""
+description: "Follow <a href=\"https://micro.blog/carlbrown\">@carlbrown on Micro.blog</a>."
+credits: "Follow <a href=\"https://micro.blog/carlbrown\">@carlbrown on Micro.blog</a>."
+baseurl: ""
+url: "https://carlbrown.micro.blog"
+markdown: "kramdown"
+username: "carlbrown"
+permalink: "/:year/:month/:day/:title.html"
+relative_permalinks: false
+author: "Carl Brown"
+name: "Carl Brown"
+gravatar_hash: "ce3382af7278c264d042948d58df683c"
+avatar: "https://micro.blog/carlbrown/avatar.jpg"
+full_name: "Carl Brown"
+bio: ""
+twitter_username: "carlbrwn"
+github_username: "carlbrown"
+instagram_username: "carl_brwn"
+paginate: 20
+paginate_path: "/page/:num/"
+timezone: "US/Indiana-Starke"
+site_id: "2288"
