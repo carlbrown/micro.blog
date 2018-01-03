@@ -1,0 +1,27 @@
+---
+layout: default
+archive: true
+---
+
+<article class="post h-entry">
+    <header>
+		<h1>{{ page.title }}</h1>
+        <h2 class="headline"><time class="dt-published" datetime="{{ page.date }}">{{ page.date | date:"%B %-d, %Y" }}</time></h2>
+    </header>
+    <section id="post-body e-content">
+        {{content}}
+    </section>
+</article>
+<footer id="post-meta" class="clearfix">
+    <a href="https://micro.blog/{{ site.username }}">
+        <img class="avatar" src="{{ site.avatar }}" />
+        <div>
+            <span class="dark">{{ site.username }}</span>
+            <span>{{ site.author }}</span>
+        </div>
+    </a>
+
+    <section id="sharing">
+        {% include share.html %}
+    </section>
+</footer>
